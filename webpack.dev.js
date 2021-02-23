@@ -4,7 +4,27 @@ const HtmlWebPackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
+  resolve: {
+    fallback: {
+      "fs": false,
+      "tls": false,
+      "net": false,
+      "path": false,
+      "zlib": false,
+      "http": false,
+      "https": false,
+      "stream": false,
+      "crypto": false,
+      "crypto-browserify": false,
+      "buffer": false,
+      "util": false,
+    }
+  },
   entry: './src/client/index.js',
+  output: {
+    libraryTarget: 'var',
+    library: 'Client'
+  },
   mode: 'development',
   devtool: 'source-map',
   stats: 'verbose',
@@ -36,8 +56,5 @@ module.exports = {
       protectWebpackAssets: false
     })
   ],
-  output: {
-    libraryTarget: 'var',
-    library: 'Client'
-  }
+
 }
