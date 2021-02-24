@@ -13,7 +13,7 @@ const app = express();
 // Cors for browser-server communitcation without security interruptions
 const cors = require('cors');
 const json = require('./mockAPI.js');
-// const { get } = require('http');
+
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -22,9 +22,6 @@ app.use(express.static('dist'));
 
 
 // API Credentials
-
-// let userInput = [];
-
 
 app.get('/', function (req, res) {
   res.sendFile('dist/index.html')
@@ -47,6 +44,7 @@ app.post('/analyze', function (req, res) {
 
   const params = `?key=${apiKey}&lang=en&model=general&url=${articleUrl}`;
   const getUrl = baseURL + params;
+
 
   fetch(getUrl, {
     method: 'POST',

@@ -1,5 +1,5 @@
 // JavaScript
-// import { checkUrl } from './js/urlChecker';
+import { checkUrl } from './js/urlChecker';
 import { handleSubmit } from './js/formHandler';
 import { checkForName } from './js/nameChecker';
 
@@ -17,5 +17,6 @@ alert("I EXIST")
 
 export {
   handleSubmit,
-  checkForName
+  // checkForName,
+  checkUrl
 }
