@@ -18,7 +18,6 @@ The aim of this project is to use multiple build tools to assist in creating a w
 
 ## Installation
 Install node and npm from your terminal
-```
 1. Clone repo 
 ```
 git clone <repo>
