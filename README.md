@@ -41,15 +41,16 @@ npm i -D workbox-webpack-plugin
 
 5. Configure environment variables
 ```
-  i. npm install dotenv
+  npm install dotenv
   ```
-  ii. Create a `.env` file at  root of your project
+  Create a `.env` file at  root of your project
   ```
   touch .env
   ```
-  iii. Add API key to your `.env` file:
+  Add API key to your `.env` file:
   ```
 API_KEY=***************
+```
 6. Start the web application
 `npm run build-prod` | Build project
 `npm start` | Run project
