@@ -40,13 +40,13 @@ npm i -D workbox-webpack-plugin
 4. Sign up for an API key at [meaningcloud.com](https://www.meaningcloud.com/developer/create-account)
 
 5. Configure environment variables
+```
     i. npm install dotenv
     ```
     ii. Create a `.env` file at  root of your project
     iii. Add API key to your `.env` file:
     ```
     API_KEY=***************
-    ```
 6. Start the web application
 `npm run build-prod` | Build project
 `npm start` | Run project
