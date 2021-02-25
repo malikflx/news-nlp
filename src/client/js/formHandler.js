@@ -22,9 +22,13 @@ function handleSubmit(e) {
       .then(function (res) {
         console.log('response from Meaning Cloud', res);
         document.getElementById('agreement').innerHTML = `Agreement: ${res.agreement}`;
+        document.getElementById('agreement').classList.add('style-result');
         document.getElementById('score_tag').innerHTML = `Score Tag: ${res.score_tag}`;
+        document.getElementById('score_tag').classList.add('style-result');
         document.getElementById('subjectivity').innerHTML = `Subjectivity: ${res.subjectivity}`;
+        document.getElementById('subjectivity').classList.add('style-result');
         document.getElementById('confidence').innerHTML = `Confidence: ${res.confidence}`;
+        document.getElementById('confidence').classList.add('style-result');
       })
   } else {
     console.log('Invalid input')

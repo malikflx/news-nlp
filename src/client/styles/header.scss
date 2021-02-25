@@ -1,8 +1,22 @@
+// Colors
+$accent: #00C5BE;
+
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 1em 1em;
   justify-content: space-between;
-  padding: 10px 40px;
-  justify-content: center;
   align-items: center;
+  font-size: 2.0em;
+  background-color: $accent;
+  color: #FFF;
+  
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 1em;
+      cursor: pointer;
+    }
+  }
 }

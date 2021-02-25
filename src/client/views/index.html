@@ -18,27 +18,29 @@
       Meaning Cloud Sentiment Analyzer
     </div>
     <div class="">
-      navigation
+      <nav>
+        <ul>
+          <!-- Makeshift links (Design purposes only) -->
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <!-- <section>
-      <div class="" onsubmit="return Client.handleSubmit(event)" <h1>Type your phrase here!</h1>
-        <input id="url_input" type="text" name="input" value="" placeholder="Enter URL here">
-        <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
-          onsubmit="return Client.handleSubmit(event)">
-    </section> -->
     <section>
       <form id="myForm" class="" onsubmit="return Client.handleSubmit(event)">
-        <input id="url_input" type="text" name="input" value="" placeholder="Enter URL here">
-        <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
-          onsubmit="return Client.handleSubmit(event)">
+        <h1>Enter the URL to your news article below!</h1>
+        <input id="url_input" type="text" name="input" value="" placeholder="https://example.com/article">
+        <span><input type="submit" name="" value="Submit" onclick="return Client.handleSubmit(event)"
+            onsubmit="return Client.handleSubmit(event)"></span>
       </form>
       <section>
 
-        <section>
-          <strong>Form Results:</strong>
+        <section id="results">
+          <h1 id="results-title">Form Results:</h1>
           <div id="agreement"></div>
           <div id="score_tag"></div>
           <div id="subjectivity"></div>
@@ -49,7 +51,7 @@
   <footer>
     <p>This is a footer</p>
   </footer>
-  <script>
+  <!-- <script>
     // Check that service workers are supported
     if ('serviceWorker' in navigator) {
       // Use the window load event to keep the page load performant
@@ -57,7 +59,7 @@
         navigator.serviceWorker.register('/service-worker.js');
       });
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
