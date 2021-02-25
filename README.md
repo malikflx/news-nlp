@@ -48,8 +48,6 @@ npm i -D workbox-webpack-plugin
     API_KEY=***************
     ```
 6. Start the web application
-Command | Action
-:------------: | :-------------:
 `npm run build-prod` | Build project
 `npm start` | Run project
 
