@@ -36,4 +36,6 @@ function handleSubmit(e) {
     document.getElementById('url_input').value = 'Invalid Input';
   }
 
-  export { handleSubmit }
+}
+
+export { handleSubmit }
