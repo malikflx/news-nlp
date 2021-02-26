@@ -11,11 +11,10 @@ import './styles/footer.scss'
 import './styles/form.scss'
 import './styles/header.scss'
 
-// console.log(checkUrl);
 console.log(checkForName);
 
 export {
   handleSubmit,
-  // checkForName,
+  checkForName,
   checkUrl
 }
